@@ -20,7 +20,9 @@ We are going to do some additonal exercises around the Flickr API page. We will 
   
 1. First off, make sure your code is working. Type something into the search box, and click 'Search'. You should get a basketball-related picture.
 
-2. Now, just as we did in class together, change the code so that when you press Search, the picture reflects the word you put in the search box. For example, if I type in ``clownfish``, I expect to see a photo of a clownfish. If I type in ``basketball``, I expect to see a basketball-related photo.
+2. Now, change the code so that when you press Search, the picture reflects the word you put in the search box. For example, if I type in ``clownfish``, I expect to see a photo of a clownfish. If I type in ``basketball``, I expect to see a basketball-related photo.
+
+  Hint: You need to change the imageUrl value so that it uses values from the API response. You can look at the file 'flickr.plus.js' which gives you a start on how to do this.
 
 3. Using CSS, make the width and height of the image 300x300.
 
@@ -34,4 +36,12 @@ We are going to do some additonal exercises around the Flickr API page. We will 
 
   Hint: You will need to look at the page ``https://www.flickr.com/services/api/flickr.photos.search.html``. On this page, you need to find how to add a parameter to the API call so that you can limit the number of photos returned.
 
-8. Change this new input box to a dropdown with the values of 5, 10, 50, and 100. Hmm. How does one grab the value of a dropdown field?
+8. Change this new input box to a dropdown with the values of 5, 10, 50, and 100. You'll need to know how to grab the value of a dropdown field.
+
+###Bonus
+
+The following exercises will require you to use the API docs which can be found here: ``https://www.flickr.com/services/api/flickr.photos.search.html``
+
+1. Support multiple word search. For example, when the user types in 'clownfish sea', you should see all the photos that have the tag 'clownfish' OR the tag 'sea'. Make sure single word search still works. Bring a teacher over when done to verify it works.
+
+2. Currently, we are doing a 'tag' search, meaning we are matching our search word with a photo's tags. Let's switch this to a 'free text' search. For example, if a photo has the title "My family visit to the Bronx Zoo", and I type in "Bronx Zoo", it should return this photo. When working, bring a teacher over to verify it works.
