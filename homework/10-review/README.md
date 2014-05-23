@@ -48,6 +48,7 @@ We will be doing some review today covering a lot of the concepts we've learned 
   alert  
   prompt  
   String replace  
+  String charAt  
   Math.random  
   function definition / function call  
 
@@ -59,4 +60,5 @@ We will be doing some review today covering a lot of the concepts we've learned 
   jquery val  
   jquery attr  
   jquery html  
+  jquery append  
 
